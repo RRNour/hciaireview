@@ -1,0 +1,31 @@
+# Agency framing dictionary
+# TAFS scoring: Textual Agency Framing Score 0-5
+
+tafs_0_passive_user:
+  terms: [user, participant, recipient, end-user, consumer, audience, stakeholder]
+  note: "Receives output; no active role specified"
+
+tafs_1_decision_maker:
+  terms: [decide, decision, choose, choice, select, selection, recommend, recommendation,
+          final decision, make a decision, user decision]
+
+tafs_2_corrector:
+  terms: [correct, correction, edit, editing, feedback, adjust, adjustment, fix, repair,
+          refine, refinement, modify, modification, revise, revision]
+
+tafs_3_supervisor:
+  terms: [supervise, supervision, monitor, monitoring, approve, approval, oversight,
+          oversee, review, human-in-the-loop, human in the loop, verify, verification,
+          validate, validation, check, inspect]
+
+tafs_4_collaborator:
+  terms: [collaborate, collaboration, co-create, co-creation, co-design, copilot,
+          co-pilot, jointly, together with AI, human-AI team, human-AI collaboration,
+          partner, co-author, co-write, co-generate]
+
+tafs_5_trainer_auditor:
+  terms: [train, training, fine-tune, fine-tuning, label, labeling, annotate, annotation,
+          audit, auditing, govern, governance, contest, contestability, accountability,
+          provenance, trace, log]
+
+high_agency_threshold: 3
