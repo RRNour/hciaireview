@@ -1,0 +1,57 @@
+record_id,year,venue,stratum,ai_type,judgment,judgment_reason,confidence
+PA_J_001,2023,BIT,journal,XAI,include,AI system with HCI interface and user study,high
+PA_J_002,2024,IwC,journal,generative,include,AI system with HCI interface and user study,high
+PA_J_003,2020,IJHCS,journal,generative,include,AI system with HCI interface and user study,high
+PA_J_004,2019,IwC,journal,XAI,exclude,"AI as methodology tool, not interface",high
+PA_J_005,2021,BIT,journal,conversational,include,AI system with HCI interface and user study,high
+PA_J_006,2025,TOCHI,journal,classical_ml,include,AI system with HCI interface and user study,high
+PA_J_007,2023,TOCHI,journal,agentic,include,AI system with HCI interface and user study,high
+PA_J_008,2023,BIT,journal,classical_ml,include,AI system with HCI interface and user study,medium
+PA_J_009,2025,BIT,journal,conversational,include,AI system with HCI interface and user study,high
+PA_J_010,2024,TOCHI,journal,XAI,include,AI system with HCI interface and user study,medium
+PA_J_011,2020,BIT,journal,XAI,include,AI system with HCI interface and user study,high
+PA_J_012,2025,TOCHI,journal,agentic,include,AI system with HCI interface and user study,high
+PA_J_013,2022,IJHCI,journal,generative,exclude,"AI as methodology tool, not interface",high
+PA_J_014,2020,BIT,journal,generative,include,AI system with HCI interface and user study,high
+PA_J_015,2024,BIT,journal,classical_ml,include,AI system with HCI interface and user study,medium
+PA_J_016,2024,TOCHI,journal,conversational,exclude,"AI as methodology tool, not interface",high
+PA_J_017,2024,IJHCS,journal,conversational,include,AI system with HCI interface and user study,medium
+PA_J_018,2020,IJHCS,journal,agentic,include,AI system with HCI interface and user study,high
+PA_J_019,2021,IJHCI,journal,classical_ml,include,AI system with HCI interface and user study,medium
+PA_J_020,2020,IJHCI,journal,generative,include,AI system with HCI interface and user study,high
+PA_J_021,2020,TOCHI,journal,generative,include,AI system with HCI interface and user study,high
+PA_J_022,2021,TOCHI,journal,LLM,exclude,"AI as methodology tool, not interface",high
+PA_J_023,2023,IJHCI,journal,generative,include,AI system with HCI interface and user study,high
+PA_J_024,2024,IwC,journal,agentic,include,AI system with HCI interface and user study,medium
+PA_J_025,2022,IJHCS,journal,generative,include,AI system with HCI interface and user study,high
+PA_J_026,2020,IJHCI,journal,conversational,include,AI system with HCI interface and user study,medium
+PA_J_027,2021,IJHCI,journal,conversational,include,AI system with HCI interface and user study,high
+PA_J_028,2023,IwC,journal,generative,include,AI system with HCI interface and user study,high
+PA_J_029,2020,HCI_journal,journal,agentic,include,AI system with HCI interface and user study,high
+PA_J_030,2025,TOCHI,journal,XAI,include,AI system with HCI interface and user study,high
+PA_C_001,2024,UIST,conference,conversational,include,AI system with HCI interface and user study,high
+PA_C_002,2023,CHI,conference,classical_ml,include,AI system with HCI interface and user study,high
+PA_C_003,2025,IUI,conference,conversational,include,AI system with HCI interface and user study,high
+PA_C_004,2020,UIST,conference,LLM,include,AI system with HCI interface and user study,medium
+PA_C_005,2025,IUI,conference,XAI,include,AI system with HCI interface and user study,medium
+PA_C_006,2021,DIS,conference,XAI,exclude,"Pure ML paper, no HCI contribution",high
+PA_C_007,2019,UIST,conference,generative,include,AI system with HCI interface and user study,high
+PA_C_008,2019,CSCW,conference,conversational,exclude,"Pure ML paper, no HCI contribution",high
+PA_C_009,2019,CHI,conference,classical_ml,include,AI system with HCI interface and user study,high
+PA_C_010,2025,CHI,conference,conversational,include,AI system with HCI interface and user study,high
+PA_C_011,2020,DIS,conference,conversational,include,AI system with HCI interface and user study,high
+PA_C_012,2021,IUI,conference,conversational,include,AI system with HCI interface and user study,high
+PA_C_013,2020,IUI,conference,classical_ml,include,AI system with HCI interface and user study,medium
+PA_C_014,2020,UIST,conference,agentic,include,AI system with HCI interface and user study,medium
+PA_C_015,2024,UIST,conference,agentic,include,AI system with HCI interface and user study,medium
+PA_C_016,2022,CHI,conference,LLM,include,AI system with HCI interface and user study,high
+PA_C_017,2019,UIST,conference,XAI,include,AI system with HCI interface and user study,medium
+PA_C_018,2023,CSCW,conference,conversational,include,AI system with HCI interface and user study,high
+PA_C_019,2019,CHI,conference,classical_ml,exclude,"Pure ML paper, no HCI contribution",high
+PA_C_020,2024,CHI,conference,LLM,include,AI system with HCI interface and user study,high
+PA_C_021,2019,UIST,conference,XAI,include,AI system with HCI interface and user study,medium
+PA_C_022,2020,UIST,conference,classical_ml,include,AI system with HCI interface and user study,high
+PA_C_023,2020,IUI,conference,LLM,include,AI system with HCI interface and user study,medium
+PA_C_024,2023,IUI,conference,agentic,include,AI system with HCI interface and user study,high
+PA_C_025,2025,DIS,conference,agentic,include,AI system with HCI interface and user study,high
+PA_C_026,2019,CHI,conference,classical_ml,include,AI system with HCI interface and user study,high
