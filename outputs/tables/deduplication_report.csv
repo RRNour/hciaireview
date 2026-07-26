@@ -1,0 +1,5 @@
+rule,duplicates_found,action
+exact_doi,32,remove
+fuzzy_title_ge_0.95,12,remove
+fuzzy_title_0.85_0.94,4,keep_most_complete
+total,48,48 records removed
