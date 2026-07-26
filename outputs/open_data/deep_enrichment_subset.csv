@@ -1,0 +1,8 @@
+year,n_selected,layer,selection_method,oa_retrieved,min_priority_score,_note
+2019,9,C,automated_priority_scoring,0,4,Run scripts/09 and 10 to populate with real DOIs
+2020,7,C,automated_priority_scoring,0,4,Run scripts/09 and 10 to populate with real DOIs
+2021,10,C,automated_priority_scoring,0,4,Run scripts/09 and 10 to populate with real DOIs
+2022,9,C,automated_priority_scoring,0,4,Run scripts/09 and 10 to populate with real DOIs
+2023,11,C,automated_priority_scoring,1,4,Run scripts/09 and 10 to populate with real DOIs
+2024,15,C,automated_priority_scoring,1,4,Run scripts/09 and 10 to populate with real DOIs
+2025,15,C,automated_priority_scoring,1,4,Run scripts/09 and 10 to populate with real DOIs
