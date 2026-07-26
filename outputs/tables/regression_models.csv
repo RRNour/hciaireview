@@ -1,0 +1,6 @@
+model,outcome,n,converged,note
+CSDS_main,CSDS,630,False,5 model specifications did not converge — see §4.5
+TAFS_main,TAFS,630,False,Period comparison (Mann-Whitney) used instead
+ESRS_main,ESRS-8,630,False,Non-parametric comparisons reported
+GapA_logistic,Gap A,1207,False,Mann-Kendall trend test used instead
+UnderSpec_logistic,under_specified,1207,False,Descriptive rates reported
