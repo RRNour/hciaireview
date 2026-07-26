@@ -1,0 +1,39 @@
+# Master Configuration — Agency-Control Framework Evidence Map
+# Repository: https://github.com/rrnour/hciaireview
+# Run: python run_pipeline.py --config config/config.yaml
+
+study:
+  title: "The Agency-Control Framework for AI-HCI Research"
+  corpus_years: [2019, 2020, 2021, 2022, 2023, 2024, 2025]
+  exclude_year: 2026
+  pre_genai_years: [2019, 2020, 2021]
+  transition_year: 2022
+  genai_years: [2023, 2024, 2025]
+
+corpus:
+  layer_b_target: 1207
+  layer_c_target: 150
+
+api:
+  openalex_base: "https://api.openalex.org"
+  polite_email: "rnour@taibahu.edu.sa"
+  rate_limit_sleep: 0.5
+
+scoring:
+  tafs_high_agency_threshold: 3   # TAFS >= 3 -> high-agency binary flag
+  gap_a_csds_threshold: 0         # CSDS = 0 + high-agency -> Gap A
+  gap_b_css_threshold: 1          # CSS <= 1 + high-agency -> Gap B
+  under_spec_css_threshold: 1     # CSS <= 1 + high-agency + no L3 -> under-specified
+  polysemy_window_tokens: 5
+
+statistics:
+  alpha: 0.05
+  cliff_delta_negligible: 0.147
+  cliff_delta_small: 0.330
+  cliff_delta_medium: 0.474
+
+paths:
+  raw: data/raw
+  normalized: data/normalized
+  final: data/final
+  outputs: outputs
