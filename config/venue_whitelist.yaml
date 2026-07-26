@@ -1,0 +1,40 @@
+# Core HCI venue whitelist
+# doi_prefix format: papers from this venue start with this DOI prefix
+# issn format: journal ISSN for filter
+
+conferences:
+  CHI:
+    doi_prefix: "10.1145/3290605"  # example; update per year
+    note: "ACM CHI Conference on Human Factors in Computing Systems"
+  CSCW:
+    doi_prefix: "10.1145/3610"
+    note: "ACM CSCW: Computer-Supported Cooperative Work"
+  UIST:
+    doi_prefix: "10.1145/3526"
+    note: "ACM UIST: User Interface Software and Technology"
+  DIS:
+    doi_prefix: "10.1145/3532"
+    note: "ACM DIS: Designing Interactive Systems"
+  IUI:
+    doi_prefix: "10.1145/3581"
+    note: "ACM IUI: Intelligent User Interfaces"
+
+journals:
+  TOCHI:
+    issn: "1073-0516"
+    note: "ACM Transactions on Computer-Human Interaction"
+  IJHCS:
+    issn: "1071-5819"
+    note: "International Journal of Human-Computer Studies"
+  BIT:
+    issn: "0144-929X"
+    note: "Behaviour and Information Technology"
+  IwC:
+    issn: "0953-5438"
+    note: "Interacting with Computers"
+  HCI_journal:
+    issn: "0737-0024"
+    note: "Human-Computer Interaction"
+  IJHCI:
+    issn: "1044-7318"
+    note: "International Journal of Human-Computer Interaction"
