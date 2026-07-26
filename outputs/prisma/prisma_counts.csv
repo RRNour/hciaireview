@@ -1,0 +1,12 @@
+stage,count
+Records retrieved from OpenAlex,17862
+Records after deduplication,16947
+Records matching AI terms,9234
+Records matching HCI/venue terms,4891
+Records in broad corpus (Layer A),3266
+Records in core HCI corpus (Layer B),1207
+Records with abstracts (>=75 words),1207
+Records selected for deep enrichment (Layer C),150
+Records with open-access full text retrieved,3
+Records with parsed sections (L3),3
+Records in final analysis,1207
