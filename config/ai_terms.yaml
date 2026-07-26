@@ -1,0 +1,66 @@
+# AI-Relevance Filter — Inclusion requires >=1 AI term AND >=1 HCI term
+
+ai_terms:
+  - "artificial intelligence"
+  - "machine learning"
+  - "deep learning"
+  - "neural network"
+  - "large language model"
+  - "language model"
+  - "llm"
+  - "generative ai"
+  - "generative model"
+  - "diffusion model"
+  - "transformer"
+  - "chatgpt"
+  - "gpt"
+  - "explainable ai"
+  - "xai"
+  - "recommendation system"
+  - "decision support"
+  - "intelligent agent"
+  - "ai agent"
+  - "autonomous agent"
+  - "agentic"
+  - "copilot"
+  - "co-pilot"
+  - "natural language processing"
+  - "computer vision"
+  - "conversational agent"
+  - "chatbot"
+  - "dialogue system"
+
+hci_terms:
+  - "user interface"
+  - "user experience"
+  - "human-computer interaction"
+  - "hci"
+  - "interaction design"
+  - "usability"
+  - "ux"
+  - "user study"
+  - "interface"
+  - "prototype"
+  - "human-centered"
+  - "user-centered"
+  - "participants"
+
+ai_type_priority:
+  agentic_ai: 1
+  llm: 2
+  generative_ai: 3
+  copilot: 4
+  conversational_ai: 5
+  xai: 6
+  adaptive_ai: 7
+  classical_ml: 8
+
+ai_type_terms:
+  agentic_ai: [agentic, "autonomous agent", "ai agent", "multi-step", "tool use"]
+  llm: ["large language model", llm, chatgpt, "gpt-4", gemini, "language model"]
+  generative_ai: ["generative ai", "generative model", "diffusion model", "text generation"]
+  copilot: [copilot, "co-pilot", "code completion"]
+  conversational_ai: ["conversational agent", chatbot, "dialogue system", "voice assistant"]
+  xai: ["explainable ai", xai, interpretable, saliency, "feature importance", lime, shap]
+  adaptive_ai: ["adaptive interface", personalization, "adaptive system", recommendation]
+  classical_ml: ["machine learning", "deep learning", "neural network", classification]
