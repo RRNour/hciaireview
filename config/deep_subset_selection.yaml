@@ -1,0 +1,34 @@
+# deep_subset_selection.yaml
+# Configuration for automated Layer C (deep-enrichment) subset selection.
+# Selection is entirely rule-based — NOT manual cherry-picking.
+
+target_size: 150
+min_priority_score: 4
+require_open_access: false
+
+priority_weights:
+  # +points for each criterion (from plan §12)
+  genai_agentic: 3        # GenAI/LLM/agentic flag present
+  high_agency: 2          # high-agency language (TAFS >= 3)
+  no_control: 3           # CSDS == 0 (no control signal at abstract level)
+  weak_control: 2         # CSDS <= 1 (weak control signal)
+  ambiguous_control: 2    # control term detected but polysemy uncertain
+  top_venue: 2            # paper in top HCI venue (CHI/CSCW/UIST/DIS/IUI)
+  high_citation: 1        # citation percentile >= 75 within year
+  open_access: 3          # open-access full text available
+  under_specified: 2      # under-specification flag set
+  # -points
+  short_abstract_penalty: 1  # abstract word count < 75
+
+top_venues_for_bonus:
+  - "CHI"
+  - "CSCW"
+  - "UIST"
+  - "DIS"
+  - "IUI"
+
+important_note: >
+  The deep subset is an ENRICHMENT SAMPLE, not a statistically
+  representative sample. Use it ONLY for gap-resolution analysis,
+  section-level evidence detection, and under-specification exploration.
+  Do NOT use it for prevalence estimates or trend analyses.
