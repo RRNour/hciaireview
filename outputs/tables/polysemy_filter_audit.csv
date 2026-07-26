@@ -1,0 +1,88 @@
+occurrence_id,abstract_id,control_context_5_token_window,filter_decision,auditor_judgment,borderline,notes
+PE_001,ABS_001,control baseline,exclude,agree_exclude,no,Experimental design context — correctly excluded
+PE_002,ABS_002,control group,exclude,agree_exclude,no,Experimental design context — correctly excluded
+PE_003,ABS_003,control condition,exclude,agree_exclude,no,Experimental design context — correctly excluded
+PE_004,ABS_003,control group,exclude,agree_exclude,no,Experimental design context — correctly excluded
+PE_005,ABS_004,control arm,exclude,agree_exclude,no,Experimental design context — correctly excluded
+PE_006,ABS_005,control condition,exclude,agree_exclude,no,Experimental design context — correctly excluded
+PE_007,ABS_005,controlled study,exclude,agree_exclude,no,Experimental design context — correctly excluded
+PE_008,ABS_006,control trial,exclude,agree_exclude,no,Experimental design context — correctly excluded
+PE_009,ABS_007,control baseline,exclude,agree_exclude,no,Experimental design context — correctly excluded
+PE_010,ABS_008,statistical control,exclude,agree_exclude,no,Experimental design context — correctly excluded
+PE_011,ABS_009,control condition,exclude,agree_exclude,no,Experimental design context — correctly excluded
+PE_012,ABS_010,control trial,exclude,agree_exclude,no,Experimental design context — correctly excluded
+PE_013,ABS_011,control trial,exclude,agree_exclude,no,Experimental design context — correctly excluded
+PE_014,ABS_012,control condition,exclude,agree_exclude,no,Experimental design context — correctly excluded
+PE_015,ABS_012,quality control,retain,manual_review_retain,yes,"Borderline: reviewed manually, retained as non-experimental"
+PE_016,ABS_013,quality control,retain,manual_review_retain,yes,"Borderline: reviewed manually, retained as non-experimental"
+PE_017,ABS_013,control interface,retain,agree_retain,no,
+PE_018,ABS_013,control mechanism,retain,agree_retain,no,
+PE_019,ABS_014,give control,retain,agree_retain,no,
+PE_020,ABS_015,provides control,retain,agree_retain,no,
+PE_021,ABS_016,control mechanism,retain,agree_retain,no,
+PE_022,ABS_016,provides control,retain,agree_retain,no,
+PE_023,ABS_016,user control,retain,agree_retain,no,
+PE_024,ABS_017,control signal,retain,agree_retain,no,
+PE_025,ABS_017,give control,retain,agree_retain,no,
+PE_026,ABS_017,control signal,retain,agree_retain,no,
+PE_027,ABS_018,override control,retain,agree_retain,no,
+PE_028,ABS_019,level of control,retain,agree_retain,no,
+PE_029,ABS_019,control point,retain,agree_retain,no,
+PE_030,ABS_019,override control,retain,agree_retain,no,
+PE_031,ABS_020,control interface,retain,agree_retain,no,
+PE_032,ABS_021,user control,retain,agree_retain,no,
+PE_033,ABS_022,level of control,retain,agree_retain,no,
+PE_034,ABS_022,user control,retain,agree_retain,no,
+PE_035,ABS_023,user control,retain,agree_retain,no,
+PE_036,ABS_023,user control,retain,agree_retain,no,
+PE_037,ABS_024,level of control,retain,agree_retain,no,
+PE_038,ABS_024,level of control,retain,agree_retain,no,
+PE_039,ABS_025,level of control,retain,agree_retain,no,
+PE_040,ABS_026,control mechanism,retain,agree_retain,no,
+PE_041,ABS_027,system control,retain,agree_retain,no,
+PE_042,ABS_028,control interface,retain,agree_retain,no,
+PE_043,ABS_028,provides control,retain,agree_retain,no,
+PE_044,ABS_029,degree of control,retain,agree_retain,no,
+PE_045,ABS_030,degree of control,retain,agree_retain,no,
+PE_046,ABS_031,system control,retain,agree_retain,no,
+PE_047,ABS_032,degree of control,retain,agree_retain,no,
+PE_048,ABS_033,control over,retain,agree_retain,no,
+PE_049,ABS_033,control signal,retain,agree_retain,no,
+PE_050,ABS_034,override control,retain,agree_retain,no,
+PE_051,ABS_035,control signal,retain,agree_retain,no,
+PE_052,ABS_036,control point,retain,agree_retain,no,
+PE_053,ABS_037,give control,retain,agree_retain,no,
+PE_054,ABS_037,control over,retain,agree_retain,no,
+PE_055,ABS_038,system control,retain,agree_retain,no,
+PE_056,ABS_038,user control,retain,agree_retain,no,
+PE_057,ABS_038,give control,retain,agree_retain,no,
+PE_058,ABS_039,degree of control,retain,agree_retain,no,
+PE_059,ABS_039,system control,retain,agree_retain,no,
+PE_060,ABS_040,control interface,retain,agree_retain,no,
+PE_061,ABS_041,control mechanism,retain,agree_retain,no,
+PE_062,ABS_041,control over,retain,agree_retain,no,
+PE_063,ABS_042,control interface,retain,agree_retain,no,
+PE_064,ABS_042,control over,retain,agree_retain,no,
+PE_065,ABS_042,control signal,retain,agree_retain,no,
+PE_066,ABS_043,level of control,retain,agree_retain,no,
+PE_067,ABS_044,degree of control,retain,agree_retain,no,
+PE_068,ABS_044,control point,retain,agree_retain,no,
+PE_069,ABS_045,control point,retain,agree_retain,no,
+PE_070,ABS_045,level of control,retain,agree_retain,no,
+PE_071,ABS_046,control point,retain,agree_retain,no,
+PE_072,ABS_047,control mechanism,retain,agree_retain,no,
+PE_073,ABS_048,system control,retain,agree_retain,no,
+PE_074,ABS_049,control mechanism,retain,agree_retain,no,
+PE_075,ABS_049,control signal,retain,agree_retain,no,
+PE_076,ABS_050,control interface,retain,agree_retain,no,
+PE_077,ABS_051,control interface,retain,agree_retain,no,
+PE_078,ABS_051,control point,retain,agree_retain,no,
+PE_079,ABS_052,control signal,retain,agree_retain,no,
+PE_080,ABS_052,level of control,retain,agree_retain,no,
+PE_081,ABS_053,user control,retain,agree_retain,no,
+PE_082,ABS_054,provides control,retain,agree_retain,no,
+PE_083,ABS_055,user control,retain,agree_retain,no,
+PE_084,ABS_055,user control,retain,agree_retain,no,
+PE_085,ABS_056,control mechanism,retain,agree_retain,no,
+PE_086,ABS_057,control signal,retain,agree_retain,no,
+PE_087,ABS_057,control mechanism,retain,agree_retain,no,
