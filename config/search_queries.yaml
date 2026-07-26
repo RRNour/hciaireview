@@ -1,0 +1,59 @@
+# search_queries.yaml
+# OpenAlex/Crossref/Semantic Scholar query strings for metadata collection.
+# All queries are combined with OR logic within each group.
+
+study_period:
+  start: 2019
+  end: 2025
+
+ai_query_terms:
+  - "human-AI interaction"
+  - "human AI interaction"
+  - "human-centered AI"
+  - "AI-HCI"
+  - "explainable AI"
+  - "XAI"
+  - "interactive AI"
+  - "intelligent user interface"
+  - "AI assistant"
+  - "AI-assisted"
+  - "generative AI"
+  - "large language model"
+  - "LLM"
+  - "ChatGPT"
+  - "GPT"
+  - "AI agent"
+  - "autonomous agent"
+  - "copilot"
+  - "co-pilot"
+  - "adaptive interface"
+  - "machine learning interface"
+  - "decision support system"
+
+hci_query_terms:
+  - "interface"
+  - "user interface"
+  - "user experience"
+  - "UX"
+  - "usability"
+  - "interaction design"
+  - "human-computer interaction"
+  - "HCI"
+  - "user study"
+  - "design study"
+  - "field study"
+  - "user-centered"
+  - "human-centered"
+  - "prototype"
+
+inclusion_logic:
+  # Include if: (>=1 AI term) AND (>=1 HCI term)
+  # OR if: appears in a core HCI venue AND contains >= 1 strong AI term
+  require_ai_and_hci: true
+  core_venue_fallback: true
+
+openalex_api:
+  base_url: "https://api.openalex.org/works"
+  per_page: 200
+  rate_limit_delay_sec: 0.5
+  mailto: "rnour@taibahu.edu.sa"
