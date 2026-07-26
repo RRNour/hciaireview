@@ -1,0 +1,139 @@
+{
+  "period_comparisons_pre2019_2021_vs_post2023_2025": {
+    "note": "Mann-Whitney U / Kruskal-Wallis. Pre n=210, Transition 2022 n=78 excluded, Post n=342.",
+    "TAFS": {
+      "statistic": 23.0214,
+      "p_value": "<0.0001",
+      "significant": true,
+      "cliffs_delta": 0.19,
+      "magnitude": "small"
+    },
+    "CSDS": {
+      "statistic": 7.0779,
+      "p_value": 0.029,
+      "significant": true,
+      "cliffs_delta": -0.13,
+      "magnitude": "negligible"
+    },
+    "CSS": {
+      "statistic": 12.2673,
+      "p_value": 0.0022,
+      "significant": true,
+      "cliffs_delta": -0.17,
+      "magnitude": "small"
+    },
+    "ESRS": {
+      "statistic": 0.4315,
+      "p_value": 0.8059,
+      "significant": false,
+      "cliffs_delta": 0.02,
+      "magnitude": "negligible"
+    },
+    "Gap_A": {
+      "statistic": 12.9928,
+      "p_value": 0.0015,
+      "significant": true,
+      "cliffs_delta": 0.09,
+      "magnitude": "negligible"
+    },
+    "Gap_B": {
+      "statistic": 21.1016,
+      "p_value": "<0.0001",
+      "significant": true,
+      "cliffs_delta": 0.17,
+      "magnitude": "small"
+    },
+    "under_specification": {
+      "statistic": 11.9366,
+      "p_value": 0.0026,
+      "significant": true,
+      "cliffs_delta": 0.11,
+      "magnitude": "negligible"
+    }
+  },
+  "genai_flag_comparisons_genai_vs_non_genai": {
+    "note": "Mann-Whitney U. GenAI-flagged vs non-flagged. Cliff's delta from pipeline.",
+    "TAFS": {
+      "statistic": 42162.5,
+      "p_value": 0.0022,
+      "significant": true,
+      "cliffs_delta": -0.14,
+      "magnitude": "small"
+    },
+    "CSDS": {
+      "statistic": 54586.0,
+      "p_value": 0.0118,
+      "significant": true,
+      "cliffs_delta": 0.11,
+      "magnitude": "negligible"
+    },
+    "ESRS": {
+      "statistic": 55608.0,
+      "p_value": 0.0028,
+      "significant": true,
+      "cliffs_delta": 0.13,
+      "magnitude": "negligible"
+    },
+    "Gap_A": {
+      "statistic": 43365.0,
+      "p_value": "<0.0001",
+      "significant": true,
+      "cliffs_delta": -0.12,
+      "magnitude": "small"
+    }
+  },
+  "sample_sizes": {
+    "broad_corpus_layer_a": 3266,
+    "core_hci_corpus_layer_b": 1207,
+    "deep_enrichment_subset_layer_c": 150,
+    "open_fulltext_retrieved": 3,
+    "scored_subset_for_index_computation": 630,
+    "pre_genai_period_n": 210,
+    "transition_year_n": 78,
+    "genai_period_n": 342,
+    "gap_a_records": 57,
+    "under_specified_records": 170,
+    "precision_audit_n": 56,
+    "polysemy_audit_n": 60
+  },
+  "precision_audit": {
+    "n_judged": 56,
+    "overall_precision": 0.875,
+    "ci_95_lower": 0.76,
+    "ci_95_upper": 0.94,
+    "journal_precision": 0.867,
+    "conference_precision": 0.885,
+    "threshold": 0.85,
+    "gate_passed": true
+  },
+  "polysemy_filter_audit": {
+    "n_abstracts_sampled": 60,
+    "control_occurrences_detected": 87,
+    "experimental_design_excluded": 14,
+    "exclusion_rate_pct": 16.1,
+    "borderline_reviewed": 2,
+    "borderline_retained": 2,
+    "filter_precision": 0.94,
+    "filter_recall": 0.96
+  },
+  "mann_kendall_trend_tests_7_annual_points": {
+    "note": "Not significant due to small n=7 annual aggregates. Period tests are primary.",
+    "TAFS": {
+      "statistic": 0.5238,
+      "p_value": 0.1331,
+      "significant": false
+    },
+    "CSDS": {
+      "statistic": -0.619,
+      "p_value": 0.0715,
+      "significant": false
+    }
+  },
+  "cliff_delta_magnitude_thresholds": {
+    "negligible": "<0.147",
+    "small": "0.147-0.33",
+    "medium": "0.33-0.474",
+    "large": ">=0.474",
+    "reference": "Vargha & Delaney 2000"
+  }
+}
