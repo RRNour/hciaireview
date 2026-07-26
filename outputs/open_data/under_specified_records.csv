@@ -1,0 +1,8 @@
+year,n_under_specified,under_specified_pct,n_papers,css_threshold,requires_l3_check,period,_note
+2019,8,11,72,<=1,True,pre_genai,under_specified = high_agency AND css<=1 AND no L3 clarification
+2020,11,19,57,<=1,True,pre_genai,under_specified = high_agency AND css<=1 AND no L3 clarification
+2021,21,26,81,<=1,True,pre_genai,under_specified = high_agency AND css<=1 AND no L3 clarification
+2022,29,37,78,<=1,True,transition,under_specified = high_agency AND css<=1 AND no L3 clarification
+2023,24,26,91,<=1,True,genai,under_specified = high_agency AND css<=1 AND no L3 clarification
+2024,33,26,126,<=1,True,genai,under_specified = high_agency AND css<=1 AND no L3 clarification
+2025,44,35,125,<=1,True,genai,under_specified = high_agency AND css<=1 AND no L3 clarification
