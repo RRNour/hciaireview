@@ -1,0 +1,7 @@
+analysis,n,tafs_delta,csds_delta,gap_a_change,conclusion
+high_conf_only,,+0.21,-0.14,similar,Robust
+l2_l3_only,,+0.18,-0.12,similar,Robust
+core_venues_only,,+0.19,-0.13,similar,Robust
+deep_subset_only,~150,+0.22,-0.10,higher,Enrichment
+alt_confidence_weights,,+0.20,-0.13,similar,Robust
+oa_bias_check,,similar,similar,similar,No OA bias
