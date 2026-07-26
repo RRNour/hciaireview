@@ -1,0 +1,23 @@
+# Polysemy filter: exclude 'control' when near these contexts
+# Window: 5 tokens before or after 'control'
+
+exclusion_contexts:
+  - control group
+  - control condition
+  - controlled experiment
+  - controlled study
+  - control variable
+  - control arm
+  - control baseline
+  - statistical control
+  - control trial
+  - controlled trial
+  - randomized control
+  - control participant
+
+borderline_review_required:
+  - quality control
+  - process control
+  - flow control
+
+note: "Borderline cases are manually reviewed and retained if non-experimental"
