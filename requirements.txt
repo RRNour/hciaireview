@@ -1,0 +1,25 @@
+# Agency-Control Framework — Python Dependencies
+# Install: pip install -r requirements.txt
+# Tested with Python 3.10+
+
+# Core scientific stack
+numpy==1.26.4
+scipy==1.13.0
+pandas==2.2.2
+
+# YAML parsing
+PyYAML==6.0.1
+
+# HTTP requests (alternative to urllib for retries)
+requests==2.31.0
+
+# Statistics
+pymannkendall==1.4.3
+
+# Visualization (for figure generation)
+matplotlib==3.8.4
+seaborn==0.13.2
+networkx==3.3
+
+# Progress bars
+tqdm==4.66.4
