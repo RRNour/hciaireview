@@ -1,0 +1,146 @@
+# control_terms.yaml
+# Control Signal Detection — CSDS, CSS Scoring Dictionaries
+# Includes C1-C10 control codes from the Final Complete Plan (§7)
+# and maps them onto CSDS levels 0-5.
+
+# ── C1-C10 Control Code Taxonomy (plan §7) ──────────────────────────
+# These 10 codes describe the TYPE of control mechanism.
+# They map onto CSDS depth levels as shown below.
+
+control_codes:
+  C1:
+    label: "Input/prompt/query control"
+    csds_level: 1
+    trigger_terms: [prompt, query, input, instruct, command, specify, describe,
+                    "type in", "write to", "user-provided input"]
+  C2:
+    label: "Output edit/reject/regenerate/select"
+    csds_level: 2
+    trigger_terms: [edit, reject, regenerate, select, "choose from",
+                    "accept or reject", discard, pick, revise, modify,
+                    "select from alternatives", "regenerate"]
+  C3:
+    label: "Iterative steering/correction"
+    csds_level: 3
+    trigger_terms: [iterative, steer, redirect, "refine iteratively",
+                    "multi-turn", "correction loop", "interactive refinement",
+                    "back-and-forth", "iterative feedback"]
+  C4:
+    label: "Approval/confirmation"
+    csds_level: 4
+    trigger_terms: [approve, approval, confirm, confirmation, validate,
+                    "confirm before", "requires approval", "needs confirmation"]
+  C5:
+    label: "Autonomy adjustment"
+    csds_level: 4
+    trigger_terms: [autonomy, "autonomy level", "level of automation",
+                    "automation level", "degree of autonomy", "adjust autonomy",
+                    "user-controlled automation", "mixed-initiative"]
+  C6:
+    label: "Correction/repair"
+    csds_level: 3
+    trigger_terms: [correct, repair, fix, "error correction", "mistake repair",
+                    "correction mechanism", "self-correction", feedback]
+  C7:
+    label: "Contestability/appeal"
+    csds_level: 5
+    trigger_terms: [contestability, contest, appeal, challenge, dispute,
+                    "right to contest", "right to appeal", "contestable AI",
+                    "contestable decision"]
+  C8:
+    label: "Undo/rollback/failure recovery"
+    csds_level: 5
+    trigger_terms: [undo, rollback, revert, "failure recovery", recover,
+                    "roll back", "undo mechanism", "recovery mechanism",
+                    "undo action", "reverse decision"]
+  C9:
+    label: "Personalisation/customisation"
+    csds_level: 2
+    trigger_terms: [personalise, personalize, customise, customize,
+                    "user preferences", "user profile", "adaptation",
+                    "personalization", "customization", "tailored to user"]
+  C10:
+    label: "Audit log/provenance/accountability"
+    csds_level: 5
+    trigger_terms: ["audit log", "audit trail", provenance, accountability,
+                    "decision log", "explanation log", "traceability",
+                    "explainability trail", "transparency log", "system log"]
+
+# ── CSDS — Control Signal DEPTH Score (0-5) ─────────────────────────
+# Higher = deeper/more substantive reported control.
+# C-code to CSDS mapping: C1→1, C2→2, C3→3, C4→4, C5→4,
+#                          C6→3, C7→5, C8→5, C9→2, C10→5
+
+csds_levels:
+  0:
+    label: "No control signal"
+    description: "Detected by absence of levels 1-5"
+    control_codes: []
+  1:
+    label: "Input/prompt/query control"
+    control_codes: [C1]
+    trigger_terms: [prompt, query, input, instruct, command, specify, describe]
+  2:
+    label: "Output edit/reject/regenerate/select"
+    control_codes: [C2, C9]
+    trigger_terms: [edit, reject, regenerate, select, "choose from",
+                    "accept or reject", discard, pick, personalise, personalize,
+                    customise, customize, "user preferences"]
+  3:
+    label: "Iterative steering/correction"
+    control_codes: [C3, C6]
+    trigger_terms: [iterative, steer, redirect, "refine iteratively",
+                    "multi-turn", "correction loop", "interactive refinement",
+                    correct, repair, fix, feedback]
+  4:
+    label: "Approval/override/autonomy adjustment"
+    control_codes: [C4, C5]
+    trigger_terms: [override, veto, approve, "approval gate", autonomy,
+                    intervention, interrupt, halt, stop, "confirm before",
+                    confirm, "autonomy level", "autonomy adjustment"]
+  5:
+    label: "Contestability/audit/rollback/governance"
+    control_codes: [C7, C8, C10]
+    trigger_terms: [contestability, contest, appeal, "audit log", "audit trail",
+                    rollback, undo, provenance, accountability, governance,
+                    recover, "failure recovery", revert, traceability]
+
+# ── CSS — Control SPECIFICITY Score (0-3) ───────────────────────────
+css_levels:
+  0:
+    label: "No control language"
+  1:
+    label: "Vague"
+    example: "users can control the AI"
+  2:
+    label: "Generic action"
+    example: "users can edit outputs"
+  3:
+    label: "Specific named mechanism"
+    example: "users click an Override button to reject the AI recommendation"
+
+# ── Polysemy filter ─────────────────────────────────────────────────
+# 'control' is IGNORED when within window_tokens of these words.
+# Validated on 60 abstracts: precision 94%, recall 96%.
+polysemy_exclusions:
+  context_words:
+    - condition
+    - group
+    - variable
+    - experiment
+    - baseline
+    - trial
+    - arm
+    - statistical
+    - "controlled study"
+    - "between-subjects"
+    - "within-subjects"
+    - "experimental condition"
+    - "control group"
+    - "control arm"
+    - "placebo control"
+  window_tokens: 5
+  validation_sample_n: 60
+  validated_precision: 0.94
+  validated_recall: 0.96
+  judgment_file: "outputs/tables/polysemy_audit.csv"
