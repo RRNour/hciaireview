@@ -1,0 +1,34 @@
+# Evaluation Signal Robustness — ESRS Scoring Dictionary (0-8 points)
+
+esrs_dimensions:
+  1:
+    label: "Empirical evaluation"
+    trigger_terms: [evaluat, experiment, study, trial, test]
+  2:
+    label: "Human participants or user data"
+    trigger_terms: [participant, "user study", "n =", crowdwork, survey,
+                    interview, "focus group", "human subject"]
+  3:
+    label: "Real task or domain"
+    trigger_terms: ["real-world", "real task", deployed, "field study",
+                    "in the wild", workplace, clinical, healthcare, educational]
+  4:
+    label: "Target users"
+    trigger_terms: ["target user", "domain expert", clinician, teacher,
+                    programmer, designer, layperson, novice, expert]
+  5:
+    label: "Baseline or comparison"
+    trigger_terms: [baseline, compar, versus, "vs.", "control condition",
+                    ablation, "state-of-the-art", benchmark]
+  6:
+    label: "Quantitative analysis"
+    trigger_terms: [significant, "p <", "p=", accuracy, precision, recall,
+                    f1, rmse, mean, median, statistic]
+  7:
+    label: "Qualitative analysis"
+    trigger_terms: [qualitative, thematic, interview, "think-aloud",
+                    "open-ended", "grounded theory", coding]
+  8:
+    label: "Failure analysis or usability metric"
+    trigger_terms: [failure, error, breakdown, usability, "nasa-tlx", sus,
+                    "cognitive load", "trust calibration", misuse, disuse]
