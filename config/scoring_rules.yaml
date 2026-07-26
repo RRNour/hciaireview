@@ -1,0 +1,50 @@
+# Scoring rules for TAFS, CSDS, CSS, ESRS, Gap measures
+
+gap_a:
+  definition: "TAFS >= 3 AND CSDS == 0"
+  label: "High-agency language with no reported control signal"
+  note: "Core finding: agency-control gap"
+
+gap_b:
+  definition: "TAFS >= 3 AND CSS <= 1"
+  label: "High-agency language with vague or no control specificity"
+
+gap_c:
+  definition: "gap_at_l1 == True AND gap_at_l3 == False"
+  label: "Abstract gap resolved by full-text evidence"
+
+gap_d:
+  definition: "gap_at_l1 == True AND gap_at_l3 == True"
+  label: "Persistent gap across abstract and full text"
+
+under_specification:
+  definition: "TAFS >= 3 AND CSS <= 1 AND no_l3_clarifying_evidence"
+  label: "Abstract-level under-specification"
+  note: "Central contribution: capability under-specified at reporting level"
+
+esrs_8_dimensions:
+  E1: empirical evaluation present
+  E2: human participants or user data
+  E3: real task or domain
+  E4: target users specified
+  E5: baseline or comparison condition
+  E6: quantitative or statistical analysis
+  E7: qualitative analysis
+  E8: failure analysis or usability/UX metric
+
+confidence_scoring:
+  weights:
+    exact_phrase_in_title: +3
+    exact_phrase_in_abstract: +2
+    exact_phrase_in_keywords: +2
+    exact_phrase_in_system_evaluation_section: +3
+    multiple_supporting_phrases: +2
+    specific_mechanism_detected: +2
+    vague_term_only: -1
+    ambiguous_control_context: -2
+    l3_evidence: +2
+    abstract_word_count_lt75: -1
+  thresholds:
+    high: 6
+    medium: "3-5"
+    low: "0-2"
